@@ -6,12 +6,16 @@ body {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: linear-gradient(94.3deg, #1a2140 10.9%, #515473 87.1%);
+  margin: 1rem;
+  border: 0.1px solid rgba(255, 255, 255, 0.116);
+  border-radius: 4%;
+  padding: 1rem;
 }
 
 .navbar {
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .navbar__item {
   list-style-type: none;
@@ -32,6 +36,7 @@ body {
 }
 
 main {
+  border: rgba(255, 255, 255, 0.116) 1px solid;
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -45,6 +50,13 @@ main .left-side .starTop--distButton {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin: 1rem;
   border-radius: 10%;
+}
+main .left-side .starMain__button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: mediumpurple;
+  color: black;
 }
 main .left-side .starFooter {
   display: flex;
@@ -63,19 +75,31 @@ main .right-side .planetPic > img {
   border: pink 1px solid;
 }
 
+.footer {
+  border: rgba(255, 255, 255, 0.116) 1px solid;
+}
 .footer__starList {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .footer__starList__option {
-  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
   background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-  height: 15rem;
+  background-image: linear-gradient(43deg, #4158D0 0%, #c850c096 46%, #FFCC70 100%);
+  height: 13rem;
   width: 15rem;
+  padding: 1rem;
 }
 .footer__starList__option__headline {
-  width: 50%;
+  width: 70%;
   font-size: 2rem;
+}
+.footer__starList__option__button {
+  position: absolute;
+  align-self: flex-end;
+  background-color: #bb8064;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  cursor: pointer;
 }
