@@ -42,9 +42,11 @@ body  {
         }
     }
 // Could not do this ↓ with BEM for some reason, used <img> instead
-    & img { 
+    & #rocket { 
         width: 4%;
         height: 2%;
+        fill: white;
+
     }
 }
 
@@ -79,8 +81,8 @@ main {
                 &:hover {
                     -webkit-animation:blink-1 .6s both;animation:blink-1 .6s both;
                     color: white;
-                    border: 1px solid brown
-                    
+                    border: 1px solid brown;
+                    cursor: pointer;
                 }
             }
         }

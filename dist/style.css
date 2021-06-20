@@ -91,9 +91,10 @@ body {
   animation: blink-2 0.9s both;
   color: coral;
 }
-.navbar img {
+.navbar #rocket {
   width: 4%;
   height: 2%;
+  fill: white;
 }
 
 main {
@@ -126,6 +127,7 @@ main .left-side .starMain__button:hover {
   animation: blink-1 0.6s both;
   color: white;
   border: 1px solid brown;
+  cursor: pointer;
 }
 main .left-side .starFooter {
   display: flex;
