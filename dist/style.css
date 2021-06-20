@@ -21,6 +21,7 @@ body {
 .navbar__item a {
   text-decoration: none;
   color: white;
+  font-size: 1.2rem;
 }
 .navbar img {
   width: fit-content;
@@ -39,18 +40,27 @@ main .left-side {
   width: 50%;
 }
 main .left-side .starTop--distButton {
-  padding: 0.1rem;
+  background-color: #924f30;
+  padding: 0.2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   margin: 1rem;
   border-radius: 10%;
 }
 main .left-side .starFooter {
   display: flex;
 }
+main .left-side .starFooter__left {
+  margin-right: 2rem;
+}
 main .right-side {
+  border: pink 1px solid;
+  display: flex;
+  justify-content: center;
   width: 50%;
 }
 main .right-side .planetPic > img {
-  width: 90%;
+  width: 60%;
+  border: pink 1px solid;
 }
 
 .footer__starList {
