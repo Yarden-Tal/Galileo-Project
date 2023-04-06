@@ -251,6 +251,7 @@ main .right-side .planetPic > img {
   padding: 0.5rem;
   background-color: #977027;
   color: whitesmoke;
+  cursor: pointer;
 }
 .form-page-container .expedition-form button {
   margin: 2rem auto;
@@ -259,6 +260,7 @@ main .right-side .planetPic > img {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 1.5rem;
   background-color: mediumpurple;
+  cursor: pointer;
 }
 .form-page-container iframe {
   border-radius: 3%;

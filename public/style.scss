@@ -285,6 +285,7 @@ main {
         padding: 0.5rem;
         background-color: #977027;
         color: whitesmoke;
+        cursor: pointer;
       }
     }
     & button {
@@ -294,6 +295,7 @@ main {
       font-family: $buttonFont;
       font-size: 1.5rem;
       background-color: mediumpurple;
+      cursor: pointer;
     }
   }
   & iframe {
