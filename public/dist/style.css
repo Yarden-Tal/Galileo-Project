@@ -162,6 +162,9 @@ main .left-side .starMain__date {
   padding: 0.2rem;
   border-radius: 6%;
 }
+main .left-side .starMain__date:hover {
+  cursor: pointer;
+}
 main .left-side .starFooter {
   display: flex;
 }
@@ -197,8 +200,8 @@ main .right-side .planetPic > img {
   border: 1.5px solid rgba(255, 255, 255, 0.116);
   display: flex;
   flex-direction: column;
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #a86e3896 46%, #977027 100%);
+  background-color: #4158d0;
+  background-image: linear-gradient(43deg, #4158d0 0%, #a86e3896 46%, #977027 100%);
   height: 11rem;
   width: 25%;
   padding: 1rem;
@@ -243,7 +246,8 @@ main .right-side .planetPic > img {
 .form-page-container .expedition-form fieldset legend {
   color: #bb8064;
 }
-.form-page-container .expedition-form fieldset input, .form-page-container .expedition-form fieldset select {
+.form-page-container .expedition-form fieldset input,
+.form-page-container .expedition-form fieldset select {
   padding: 0.5rem;
   background-color: #977027;
   color: whitesmoke;
