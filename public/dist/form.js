@@ -47,7 +47,7 @@ var handleSubmit = function (e) {
         //Add participant to the participants array:
         participants.push(new Participant(name, date_1, expedition_1, isCertified));
         alert("Thank you for your booking!\nYour details:\n" + name + ", " + (isCertified ? "certified Astronaut." : "uncertified.") + "\n" + expedition_1 + ", " + date_1 + ".");
-        window.location.replace("/public/index.html");
+        window.location.replace("/index.html");
     }
     catch (er) {
         console.error(er);

@@ -57,7 +57,7 @@ const handleSubmit = (e: any) => {
         isCertified ? "certified Astronaut." : "uncertified."
       }\n${expedition}, ${date}.`
     );
-    window.location.replace("/public/index.html");
+    window.location.replace("/index.html");
   } catch (er) {
     console.error(er);
   }
