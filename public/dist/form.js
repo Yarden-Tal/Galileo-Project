@@ -1,21 +1,21 @@
-console.log('***The errors are caused by the Youtube embed for some reason. After a lot of effort I decided to skip solving these and leave the iframe as is!***');
+console.log("***The errors are caused by the Youtube embed for some reason. After a lot of effort I decided to skip solving these and leave the iframe as is!***");
 //Select the locations to insert the data collected at the Homepage:
-var date = document.querySelector('#date').getAttribute('value');
-var expedition = document.querySelector('#expedition');
+var date = document.querySelector("#date").getAttribute("value");
+var expedition = document.querySelector("#expedition");
 //Insert the data from the Homepage:
-var chosenDate = localStorage.getItem('date');
-var chosenExpedition = localStorage.getItem('expedition');
-document.querySelector('#date').setAttribute('value', chosenDate);
+var chosenDate = localStorage.getItem("date");
+var chosenExpedition = localStorage.getItem("expedition");
+document.querySelector("#date").setAttribute("value", chosenDate);
 var selectExpedition = function () {
     try {
-        if (chosenExpedition === 'Mars Expedition') {
-            expedition[0].selected = 'selected';
+        if (chosenExpedition === "Mars Expedition") {
+            expedition[0].selected = "selected";
         }
-        else if (chosenExpedition === 'Venus Expedition') {
-            expedition[1].selected = 'selected';
+        else if (chosenExpedition === "Venus Expedition") {
+            expedition[1].selected = "selected";
         }
-        else if (chosenExpedition === 'Moon Expedition') {
-            expedition[2].selected = 'selected';
+        else if (chosenExpedition === "Moon Expedition") {
+            expedition[2].selected = "selected";
         }
     }
     catch (error) {
@@ -36,20 +36,20 @@ var Participant = /** @class */ (function () {
 //An array listing the participants booked:
 var participants = [];
 //Handle submit event for the form:
-var handleSubmit = function (event) {
+var handleSubmit = function (e) {
     try {
-        event.preventDefault();
+        e.preventDefault();
         //prepare the input as paramaters for the Participant Class:
-        var name = event.target.elements.name.value;
-        var date_1 = event.target.elements.date.value;
-        var expedition_1 = event.target.elements.expedition.value;
-        var isCertified = event.target.elements.isCertified.checked;
+        var name = e.target.elements.name.value;
+        var date_1 = e.target.elements.date.value;
+        var expedition_1 = e.target.elements.expedition.value;
+        var isCertified = e.target.elements.isCertified.checked;
         //Add participant to the participants array:
         participants.push(new Participant(name, date_1, expedition_1, isCertified));
-        console.log(participants);
-        alert("Thank you, " + name + "!");
+        alert("Thank you for your booking!\nYour details:\n" + name + ", " + (isCertified ? "certified Astronaut." : "uncertified.") + "\n" + expedition_1 + ", " + date_1 + ".");
+        window.location.replace("/public/index.html");
     }
-    catch (error) {
-        console.error(error);
+    catch (er) {
+        console.error(er);
     }
 };
